@@ -1,0 +1,138 @@
+
+h2 {
+  font-size: 2.5vw;
+  margin-bottom: 2%;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 3%;
+  transition: all 0.3s ease; /* Transizione fluida per tutte le proprietà */
+}
+
+h2:hover {
+  font-size: 3vw; 
+  color: #f39c12; 
+  transform: scale(1.1); 
+}
+  
+  p {
+    font-size: 1.2vw;
+    line-height: 1.6;
+    margin-bottom: 3%;
+    color: white;
+  }
+  
+  /* Contenitore per le immagini */
+  div {
+    display: flex;
+    justify-content: center;
+    gap: 2%;  
+    flex-wrap: wrap;  /* Le immagini si adattano su più righe se necessario */
+    margin-bottom: 3%;
+  }
+  
+  .image-container {
+    width: 100%;  /* Ogni immagine occupa il 30% della larghezza */
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+
+  span {
+    display: inline-block;
+    width: 24%;
+    height: 100%;
+    padding: 5px;
+    border: 2px solid rgb(255, 255, 255);    
+    background-color: rgb(6, 37, 174); 
+    color: #000000;
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  hr{
+    color: white;
+    margin-bottom: 3%;
+  }
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /*(un'unità frazionaria) una frazione dello spazio disponibile, l'altra 2.*/
+  gap: 20px; /*Aggiunge uno spazio di 20px tra gli elementi della griglia.*/
+  padding: 20px;
+}
+
+/* Colonne */
+.left-column,
+.right-column {
+    padding: 5%;
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+.animato {
+  width: 30%;
+  animation: spostaEColore 4s infinite alternate;
+}
+
+/* Definizione dell'animazione */
+@keyframes spostaEColore {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(45%); /* Muovi verso destra */
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+  @media (max-width: 900px) {
+    body {
+      padding: 5%;
+    }
+  
+    h2 {
+      font-size: 4vw;
+    }
+
+    main {
+      padding: 11%;
+    }
+  
+    p {
+      font-size: 4vw;
+    }
+
+    span{
+      background-color: rgb(43, 224, 11); 
+    }
+  
+    .image-container {
+      width: 100%;
+    }
+
+    .header li{
+
+      float: left;
+   }
+   
+   .header li a{
+
+      padding: 20px 30px;
+      border-right:1px solid red;
+   }
+
+   .header .menu{
+      clear: none;
+      float: right;
+      max-height: 0;
+
+   }
+
+   .header .menu-icon{
+      display: none;
+   } 
+  }

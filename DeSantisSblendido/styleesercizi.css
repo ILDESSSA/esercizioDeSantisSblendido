@@ -1,0 +1,122 @@
+h2 {
+  font-size: 2.5vw;
+  margin-bottom: 2%;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 3%;
+  transition: all 0.3s ease; /* Transizione fluida per tutte le proprietà */
+}
+
+h2:hover {
+  font-size: 3vw; 
+  color: #f39c12; 
+  transform: scale(1.1); /* Ingrossa l'elemento */
+}
+  
+  h3 {
+    font-size: 2vw;
+    margin-top: 3%;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Paragrafi */
+  p {
+    font-size: 1.2vw;
+    line-height: 1.6;
+    margin-bottom: 3%;
+    color: white;
+  }
+
+  hr{
+    color: white;
+    margin-bottom: 3%;
+  }
+
+  #carouselExampleDark {
+    max-width: 40%;  
+    margin: 0 auto;  
+  }
+
+  #carouselExampleDark1 {
+    max-width: 40%;  
+    margin: 0 auto;  
+  }
+
+  #carouselExampleDark2 {
+    max-width: 40%;  
+    margin: 0 auto;  
+  }
+  
+  .carousel-inner {
+    max-height: 40%;  
+  }
+  
+  .carousel-item img {
+    width: 100%;  
+    height: auto;  
+  }
+  
+  /* Contenitore per l'immagine */
+  img {
+    display: block;
+    margin: 3% auto;  
+    max-width: 90%;  /* L'immagine non supera il 90% della larghezza del contenitore */
+    height: auto;
+    border-radius: 5px;  /* Aggiungi angoli arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ombra */
+  }
+
+  
+  
+  /* Styling per il layout dei paragrafi */
+  section {
+    margin-bottom: 5%;
+  }
+
+  @media (max-width: 900px) {
+    body {
+      padding: 5%;
+    }
+  
+    h2 {
+      font-size: 4vw;
+    }
+
+    main {
+      padding: 11%;
+    }
+  
+    p {
+      font-size: 4vw;
+    }
+  
+    .image-container {
+      width: 100%;
+    }
+
+    .header li{
+
+      float: left;
+   }
+   
+   .header li a{
+
+      padding: 20px 30px;
+      border-right:1px solid red;
+   }
+
+   .header .menu{
+      clear: none;
+      float: right;
+      max-height: 0;
+
+   }
+
+   .header .menu-icon{
+      display: none;
+   } 
+  }
